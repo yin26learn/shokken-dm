@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF 翻頁展示</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+  <style>
+    #flipbook {
+      width: 1000px;
+      height: 700px;
+      margin: auto;
+    }
+
+    #flipbook .page {
+      width: 500px;
+      height: 700px;
+    }
+
+    #flipbook .page img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page"><img src="images/page (1).jpg" alt=""></div>
+    <div class="page"><img src="images/page (2).jpg" alt=""></div>
+    <div class="page"><img src="images/page (3).jpg" alt=""></div>
+    <div class="page"><img src="images/page (4).jpg" alt=""></div>
+    <div class="page"><img src="images/page (5).jpg" alt=""></div>
+    <div class="page"><img src="images/page (6).jpg" alt=""></div>
+    <div class="page"><img src="images/page (7).jpg" alt=""></div>
+    <div class="page"><img src="images/page (8).jpg" alt=""></div>
+    <div class="page"><img src="images/page (9).jpg" alt=""></div>
+    <div class="page"><img src="images/page (10).jpg" alt=""></div>
+    <div class="page"><img src="images/page (11).jpg" alt=""></div>
+    <div class="page"><img src="images/page (12).jpg" alt=""></div>
+    <div class="page"><img src="images/page (13).jpg" alt=""></div>
+    <div class="page"><img src="images/page (14).jpg" alt=""></div>
+    <div class="page"><img src="images/page (15).jpg" alt=""></div>
+    <div class="page"><img src="images/page (16).jpg" alt=""></div>
+    <div class="page"><img src="images/page (17).jpg" alt=""></div>
+    <div class="page"><img src="images/page (18).jpg" alt=""></div>
+    <div class="page"><img src="images/page (19).jpg" alt=""></div>
+    <div class="page"><img src="images/page (20).jpg" alt=""></div>
+    <div class="page"><img src="images/page (21).jpg" alt=""></div>
+    <div class="page"><img src="images/page (22).jpg" alt=""></div>
+    <div class="page"><img src="images/page (23).jpg" alt=""></div>
+    <div class="page"><img src="images/page (24).jpg" alt=""></div>
+    <div class="page"><img src="images/page (25).jpg" alt=""></div>
+    <div class="page"><img src="images/page (26).jpg" alt=""></div>
+    <div class="page"><img src="images/page (27).jpg" alt=""></div>
+    <div class="page"><img src="images/page (28).jpg" alt=""></div>
+    <div class="page"><img src="images/page (29).jpg" alt=""></div>
+    <div class="page"><img src="images/page (30).jpg" alt=""></div>
+    <div class="page"><img src="images/page (31).jpg" alt=""></div>
+    <div class="page"><img src="images/page (32).jpg" alt=""></div>
+    <!-- 依此類推 -->
+  </div>
+
+  <script>
+    $('#flipbook').turn({
+      width: 1000,
+      height: 700,
+      autoCenter: true
+    });
+  </script>
+</body>
+</html>
